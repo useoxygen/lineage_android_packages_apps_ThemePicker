@@ -32,6 +32,7 @@ import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptio
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.COLORS
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.COLOR_CONTRAST
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.GRID
+import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.HIGHLIGHT
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.PACK_THEME
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption.SCREEN_SAVER
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerLockCustomizationOption.CLOCK
@@ -160,6 +161,16 @@ constructor(
                             COLORS to
                                 layoutInflater.inflate(
                                     R.layout.customization_option_entry_colors,
+                                    optionContainer,
+                                    false,
+                                )
+                        )
+                    }
+                    if (CyclonHighlight.isAvailable(context)) {
+                        add(
+                            HIGHLIGHT to
+                                layoutInflater.inflate(
+                                    R.layout.cyclon_customization_option_entry_highlight,
                                     optionContainer,
                                     false,
                                 )

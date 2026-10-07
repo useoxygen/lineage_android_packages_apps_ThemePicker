@@ -43,6 +43,8 @@ constructor(private val defaultCustomizationOptionUtil: DefaultCustomizationOpti
         PACK_THEME,
         COLORS,
         COLOR_CONTRAST,
+        // Cyclon: opens the launcher's highlight picker in place of COLORS.
+        HIGHLIGHT,
         APP_ICONS,
         GRID,
     }

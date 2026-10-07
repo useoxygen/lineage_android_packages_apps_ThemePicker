@@ -57,6 +57,7 @@ import com.android.customization.picker.settings.ui.binder.ColorContrastSectionV
 import com.android.systemui.plugins.keyguard.ui.clocks.ClockAxisStyle
 import com.android.themepicker.R
 import com.android.wallpaper.config.BaseFlags
+import com.android.wallpaper.customization.ui.util.CyclonHighlight
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerHomeCustomizationOption
 import com.android.wallpaper.customization.ui.util.ThemePickerCustomizationOptionUtil.ThemePickerLockCustomizationOption
 import com.android.wallpaper.customization.ui.viewmodel.ThemePickerCustomizationOptionsData
@@ -289,6 +290,11 @@ constructor(private val defaultCustomizationOptionsBinder: DefaultCustomizationO
             optionGridDescription = optionGrid.requireViewById(R.id.option_entry_description)
             optionGridIcon = optionGrid.requireViewById(R.id.option_entry_icon)
         }
+
+        homeScreenCustomizationOptionEntries
+            .firstOrNull { it.first == ThemePickerHomeCustomizationOption.HIGHLIGHT }
+            ?.second
+            ?.setOnClickListener { CyclonHighlight.open(it.context) }
 
         val optionColorContrast: View =
             homeScreenCustomizationOptionEntries

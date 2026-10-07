@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+-->
+<resources>
+    <!-- Wallpaper & style: the row that opens the launcher's highlight picker (the owner's one accent colour), in place of Colors -->
+    <string name="cyclon_highlight_title">Highlight</string>
+    <!-- Wallpaper & style: under the Highlight row; the colour is picked in Cyclon's own settings -->
+    <string name="cyclon_highlight_description">The one colour Cyclon uses for on, selected and progress</string>
+</resources>

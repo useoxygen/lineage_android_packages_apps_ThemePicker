@@ -43,7 +43,6 @@ import com.android.wallpaper.picker.customization.ui.viewmodel.CustomizationOpti
 import com.android.wallpaper.picker.customization.ui.viewmodel.CustomizationOptionsViewModelFactory
 import com.android.wallpaper.picker.customization.ui.viewmodel.DefaultCustomizationOptionsViewModel
 import com.android.wallpaper.picker.preview.ui.util.AccessibilityUtil
-import com.android.wallpaper.util.ActivityUtils
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
@@ -116,7 +115,7 @@ constructor(
                     isGridCustomizationAvailable = isGridCustomizationAvailable,
                     isIconStyleAvailable = isIconStyleAvailable,
                     isShapeAvailable = isShapeOptionsAvailable,
-                    isColorCustomizationAvailable = !ActivityUtils.isSUWMode(appContext),
+                    isColorCustomizationAvailable = CYCLON_COLOR_CUSTOMIZATION_AVAILABLE,
                 )
             }
         } else {
@@ -129,7 +128,7 @@ constructor(
                     isGridCustomizationAvailable = isGridCustomizationAvailable,
                     isIconStyleAvailable = isThemedIconAvailable,
                     isShapeAvailable = isShapeOptionsAvailable,
-                    isColorCustomizationAvailable = !ActivityUtils.isSUWMode(appContext),
+                    isColorCustomizationAvailable = CYCLON_COLOR_CUSTOMIZATION_AVAILABLE,
                 )
             }
         }
@@ -358,3 +357,10 @@ constructor(
         ): ThemePickerCustomizationOptionsViewModel
     }
 }
+
+/**
+ * Cyclon: no Colors option. The owner's one highlight colour (design draft 4) comes from the
+ * launcher's highlight picker; Wallpaper & style links there instead (HIGHLIGHT), so Material You
+ * palettes and theme styles can't compete with it.
+ */
+private const val CYCLON_COLOR_CUSTOMIZATION_AVAILABLE = false
