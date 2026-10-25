@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon: the Words kit's back mark (.back, "‹"), a thin chevron in the muted colour, for Wallpaper & style
+     (overrides SettingsLib's, which WallpaperPicker2's toolbar pages show), as on Settings' pages. The 40dp shape only keeps the touch target.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:width="40dp" android:height="40dp" />
+            <solid android:color="@android:color/transparent" />
+            <corners
+                android:radius="100dp" />
+        </shape>
+    </item>
+
+    <item
+        android:width="20dp"
+        android:height="20dp"
+        android:gravity="center">
+        <vector
+            android:width="20dp"
+            android:height="20dp"
+            android:viewportWidth="20"
+            android:viewportHeight="20"
+            android:autoMirrored="true">
+            <path
+                android:strokeColor="@color/cyclon_words_mut"
+                android:strokeWidth="1.6"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:pathData="M12.5,4L6.5,10L12.5,16"/>
+        </vector>
+    </item>
+    <item android:drawable="?android:attr/actionBarItemBackground" />
+</layer-list>
