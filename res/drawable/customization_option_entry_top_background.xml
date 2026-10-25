@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words" (the UI kit's rows): the first option of a group is a flat row on the page,
+     with a faint line under it, inset like the text, to the next option.
+-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple_material">
+    <item android:id="@android:id/mask">
+        <color android:color="@android:color/white" />
+    </item>
+    <item>
+        <color android:color="@android:color/transparent" />
+    </item>
+    <item
+        android:gravity="bottom|fill_horizontal"
+        android:height="1dp"
+        android:start="@dimen/customization_option_entry_horizontal_padding"
+        android:end="@dimen/customization_option_entry_horizontal_padding">
+        <color android:color="@color/cyclon_words_line" />
+    </item>
+</ripple>

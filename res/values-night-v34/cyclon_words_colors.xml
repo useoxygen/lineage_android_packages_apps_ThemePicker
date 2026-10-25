@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words": SettingsLib's Material colour roles inside ThemePicker, which takes SettingsLib's theme
+     resources (its switches, the picker's close button and text colours). Surfaces are the kit's page colour, text
+     is ink and grey, anything "on" is ink rather than the owner's highlight. Both day and night point at the
+     cyclon_words tokens, which change with night mode.
+-->
+<resources>
+    <color name="settingslib_materialColorPrimary">@color/cyclon_words_fg</color>
+    <color name="settingslib_materialColorOnPrimary">@color/cyclon_words_inv</color>
+    <color name="settingslib_materialColorSecondaryContainer">@color/cyclon_words_fill2</color>
+    <color name="settingslib_materialColorOnSecondaryContainer">@color/cyclon_words_fg</color>
+    <color name="settingslib_materialColorOutline">@color/cyclon_words_faint</color>
+    <color name="settingslib_materialColorOutlineVariant">@color/cyclon_words_line</color>
+    <color name="settingslib_materialColorBackground">@color/cyclon_words_bg</color>
+    <color name="settingslib_materialColorOnBackground">@color/cyclon_words_fg</color>
+    <color name="settingslib_materialColorSurface">@color/cyclon_words_bg</color>
+    <color name="settingslib_materialColorOnSurface">@color/cyclon_words_fg</color>
+    <color name="settingslib_materialColorSurfaceVariant">@color/cyclon_words_fill</color>
+    <color name="settingslib_materialColorOnSurfaceVariant">@color/cyclon_words_mut</color>
+    <color name="settingslib_materialColorSurfaceBright">@color/cyclon_words_bg</color>
+    <color name="settingslib_materialColorSurfaceContainerLowest">@color/cyclon_words_bg</color>
+    <color name="settingslib_materialColorSurfaceContainerLow">@color/cyclon_words_bg</color>
+    <color name="settingslib_materialColorSurfaceContainer">@color/cyclon_words_bg</color>
+    <color name="settingslib_materialColorSurfaceContainerHigh">@color/cyclon_words_sheet</color>
+    <color name="settingslib_materialColorSurfaceContainerHighest">@color/cyclon_words_fill2</color>
+</resources>

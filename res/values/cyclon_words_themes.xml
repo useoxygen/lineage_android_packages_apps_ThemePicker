@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words": WallpaperPicker2's main theme (Wallpaper & style's picker activity), as WallpaperPicker2 defines it
+     for night (values) and day (values-notnight-v27), plus every text in Inter Tight (the system family
+     "cyclon-words") and the kit's page colour behind the window; and the picker's toolbar title in the kit's heading
+     type.
+-->
+<resources>
+    <style name="WallpaperTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="colorPrimary">?android:colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="homeAsUpIndicator">@drawable/material_ic_arrow_back_black_24</item>
+
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="dialogPreferredPadding">24dp</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarNavigationButtonStyle">@android:style/Widget.Toolbar.Button.Navigation
+        </item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:windowBackground">@color/cyclon_words_bg</item>
+    </style>
+
+    <!-- The picker's title ("Wallpaper & style") beside the close and Apply buttons: 24sp/500 with -0.02 tracking. -->
+    <style name="ToolbarTheme">
+        <item name="android:titleTextAppearance">@style/TextAppearance.CyclonWords.PickerTitle</item>
+    </style>
+
+    <style name="TextAppearance.CyclonWords.PickerTitle"
+        parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/system_on_surface</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words": the kit's switch has no check or close glyph. A blank icon (rather than none) keeps
+     MaterialSwitch's thumb at its 24dp "with icon" size in both states, as in the kit.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@android:color/transparent" />
+    <size android:width="16dp" android:height="16dp" />
+</shape>

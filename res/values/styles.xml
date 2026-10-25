@@ -19,6 +19,8 @@
     <!-- Main themes -->
     <style name="CustomizationTheme" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="colorPrimary">?android:colorPrimary</item>
+        <!-- Cyclon "Words": every text is Inter Tight (the system family "cyclon-words"). -->
+        <item name="android:fontFamily">cyclon-words</item>
 
         <item name="android:navigationBarColor">?android:colorPrimaryDark</item>
         <item name="android:navigationBarDividerColor">@android:color/transparent</item>
@@ -115,8 +117,12 @@
         <item name="android:maxLength">100</item>
     </style>
 
+    <!-- Cyclon "Words": sheet and section titles in the kit's heading weight, 500 with -0.02 tracking, in Inter
+         Tight (the size stays, so the sheets' layouts do not change). -->
     <style name="SectionTitleTextStyle">
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:letterSpacing">-0.02</item>
         <item name="android:textColor">@color/system_on_surface</item>
         <item name="android:textDirection">locale</item>
         <item name="android:textSize">20sp</item>
@@ -133,22 +139,28 @@
     </style>
 
     <style name="SectionSubtitleTextStyle" parent="SectionTitleTextStyle">
-        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:letterSpacing">0</item>
         <item name="android:textColor">@color/system_on_surface_variant</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:lineHeight">16sp</item>
     </style>
 
+    <!-- Cyclon "Words": an option's title is the kit's 18sp/400 row title, its description grey 13sp. -->
     <style name="CustomizationOptionEntryTitleTextStyle">
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">@color/system_on_surface</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="CustomizationOptionEntrySubtitleTextStyle">
-        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">400</item>
         <item name="android:textColor">@color/system_on_surface_variant</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">13sp</item>
     </style>
 
     <style name="BetaTagTextStyle" parent="SectionTitleTextStyle">

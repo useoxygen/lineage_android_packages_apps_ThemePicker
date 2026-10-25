@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     The kit's dark colours, as solid colours on the #0B0B0D page.
+-->
+<resources>
+    <color name="cyclon_words_bg">#FF0B0B0D</color>
+    <color name="cyclon_words_fg">#FFF2F2F2</color>
+    <color name="cyclon_words_mut">#FF9D9D9E</color>
+    <color name="cyclon_words_faint">#FF59595A</color>
+    <color name="cyclon_words_fill">#FF1F1F20</color>
+    <color name="cyclon_words_fill2">#FF2D2D2F</color>
+    <color name="cyclon_words_line">#FF232325</color>
+    <color name="cyclon_words_sheet">#FF18181C</color>
+    <color name="cyclon_words_red">#FFFF6B5E</color>
+    <!-- Text and thumbs on ink: white in light, black in dark. -->
+    <color name="cyclon_words_inv">#FF000000</color>
+
+    <!-- WallpaperPicker2 defines its colour roles for night too, so they are replaced here as well. -->
+    <color name="system_primary">@color/cyclon_words_fg</color>
+    <color name="system_on_primary">@color/cyclon_words_inv</color>
+    <color name="system_primary_container">@color/cyclon_words_fill2</color>
+    <color name="system_on_primary_container">@color/cyclon_words_fg</color>
+    <color name="system_secondary_container">@color/cyclon_words_fill2</color>
+    <color name="system_on_secondary_container">@color/cyclon_words_fg</color>
+    <color name="system_on_surface">@color/cyclon_words_fg</color>
+    <color name="system_on_surface_variant">@color/cyclon_words_mut</color>
+    <color name="system_surface_container">@color/cyclon_words_bg</color>
+    <color name="system_surface_container_low">@color/cyclon_words_fill</color>
+    <color name="system_surface_container_high">@color/cyclon_words_sheet</color>
+    <color name="system_surface_container_highest">@color/cyclon_words_fill2</color>
+    <color name="system_surface_bright">@color/cyclon_words_fill</color>
+    <color name="system_outline">@color/cyclon_words_faint</color>
+    <color name="system_outline_variant">@color/cyclon_words_line</color>
+</resources>

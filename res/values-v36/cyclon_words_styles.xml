@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words": the picker's switches (clock size, dark theme, themed icons, app labels) use SettingsLib's
+     expressive switch style; ThemePicker replaces it with the kit's pill switch: ink when on with a white (light) or
+     black (dark) thumb, grey when off with an ink thumb, no check or close glyph (the thumb icon is blank, which keeps
+     the thumb 24dp in both states) and no outline. Otherwise as SettingsLib's style.
+-->
+<resources>
+    <style name="SettingslibSwitchStyle.Expressive" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/settingslib_expressive_space_medium4</item>
+        <item name="android:background">@null</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="thumbIcon">@drawable/settingslib_expressive_switch_thumb_icon</item>
+        <item name="thumbIconTint">@color/settingslib_expressive_color_switch_thumb</item>
+        <item name="thumbTint">@color/settingslib_expressive_color_switch_thumb</item>
+        <item name="trackTint">@color/settingslib_expressive_color_switch_track</item>
+        <item name="trackDecorationTint">@android:color/transparent</item>
+    </style>
+</resources>
