@@ -11,7 +11,7 @@
     <color name="cyclon_words_fill">#FF1F1F20</color>
     <color name="cyclon_words_fill2">#FF2D2D2F</color>
     <color name="cyclon_words_line">#FF232325</color>
-    <color name="cyclon_words_sheet">#FF18181C</color>
+    <color name="cyclon_words_sheet">#FF17171B</color>
     <color name="cyclon_words_red">#FFFF6B5E</color>
     <!-- Text and thumbs on ink: white in light, black in dark. -->
     <color name="cyclon_words_inv">#FF000000</color>
