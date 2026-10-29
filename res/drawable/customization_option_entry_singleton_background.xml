@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words" (the UI kit's rows): an option that is alone in its group is a flat row on
+     the page, with no card and no line.
+-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple_material">
+    <item android:id="@android:id/mask">
+        <color android:color="@android:color/white" />
+    </item>
+    <item>
+        <color android:color="@android:color/transparent" />
+    </item>
+</ripple>

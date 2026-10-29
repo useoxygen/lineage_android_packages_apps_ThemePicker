@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words": the back mark of Wallpaper & style's toolbar (WallpaperPicker2's DefaultToolbarBinder; this replaces
+     its arrow) as the kit's "‹" (.back), the thin chevron Settings' pages show, in the muted colour.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20"
+    android:tint="@color/system_on_surface_variant"
+    android:autoMirrored="true">
+    <path
+        android:strokeColor="@android:color/white"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12.5,4L6.5,10L12.5,16"/>
+</vector>

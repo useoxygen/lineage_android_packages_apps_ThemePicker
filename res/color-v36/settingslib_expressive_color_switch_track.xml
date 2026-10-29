@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words": the kit's switch track, ink when on and the grey fill when off (never the owner's highlight).
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:alpha="0.38"
+        android:color="@color/cyclon_words_fill2"
+        android:state_enabled="false" android:state_checked="false"/>
+    <item
+        android:alpha="0.38"
+        android:color="@color/cyclon_words_fg"
+        android:state_enabled="false" android:state_checked="true"/>
+    <item
+        android:color="@color/cyclon_words_fg"
+        android:state_checked="true"/>
+    <item
+        android:color="@color/cyclon_words_fill2"/>
+</selector>

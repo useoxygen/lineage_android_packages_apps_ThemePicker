@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon "Words" (the UI kit's Settings page) for Wallpaper & style, so it looks like the Settings page that
+     opens it. The kit's light colours; the dark ones are in values-night. The picker draws on a solid page, so
+     the kit's translucent fill, line and sheet colours are given as solid colours on it.
+-->
+<resources>
+    <color name="cyclon_words_bg">#FFF5F4F0</color>
+    <color name="cyclon_words_fg">#FF151515</color>
+    <color name="cyclon_words_mut">#FF5C5C5C</color>
+    <color name="cyclon_words_faint">#FFA3A3A3</color>
+    <color name="cyclon_words_fill">#FFE9E8E4</color>
+    <color name="cyclon_words_fill2">#FFDFDEDA</color>
+    <color name="cyclon_words_line">#FFDFDEDA</color>
+    <color name="cyclon_words_sheet">#FFFCFCFA</color>
+    <color name="cyclon_words_red">#FFD7392B</color>
+    <!-- Text and thumbs on ink: white in light, black in dark. -->
+    <color name="cyclon_words_inv">#FFFFFFFF</color>
+
+    <!-- WallpaperPicker2's Material colour roles: the page is the kit's page colour (the picker and its preview
+         shade take system_surface_container), text is ink and grey, the floating sheet is the kit's sheet, the
+         cells inside it are the kit's fills, and selections, links and the Apply button are ink rather than
+         the owner's highlight. -->
+    <color name="system_primary">@color/cyclon_words_fg</color>
+    <color name="system_on_primary">@color/cyclon_words_inv</color>
+    <color name="system_primary_container">@color/cyclon_words_fill2</color>
+    <color name="system_on_primary_container">@color/cyclon_words_fg</color>
+    <color name="system_secondary_container">@color/cyclon_words_fill2</color>
+    <color name="system_on_secondary_container">@color/cyclon_words_fg</color>
+    <color name="system_on_surface">@color/cyclon_words_fg</color>
+    <color name="system_on_surface_variant">@color/cyclon_words_mut</color>
+    <color name="system_surface_container">@color/cyclon_words_bg</color>
+    <color name="system_surface_container_low">@color/cyclon_words_fill</color>
+    <color name="system_surface_container_high">@color/cyclon_words_sheet</color>
+    <color name="system_surface_container_highest">@color/cyclon_words_fill2</color>
+    <color name="system_surface_bright">@color/cyclon_words_fill</color>
+    <color name="system_outline">@color/cyclon_words_faint</color>
+    <color name="system_outline_variant">@color/cyclon_words_line</color>
+</resources>

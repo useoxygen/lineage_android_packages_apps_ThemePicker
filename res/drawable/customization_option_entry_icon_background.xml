@@ -16,6 +16,7 @@
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="@color/system_surface_container" />
+    <!-- Cyclon "Words": the option icons sit on the kit's fill, now that the rows sit on the page itself. -->
+    <solid android:color="@color/cyclon_words_fill" />
     <corners android:radius="18dp" />
 </shape>
